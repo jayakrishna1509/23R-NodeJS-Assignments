@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>23R NodeJS Assignments</title>
+    <link rel="icon" href="./images/logo.png" type="image/x-icon" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background-color: #f3f3f3;
+      }
+
+      .header {
+        background-color: #198754;
+        padding: 1.5rem;
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+
+      .header-title {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #fff;
+      }
+
+      .container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 2rem;
+      }
+
+      .cards-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+      }
+
+      .card {
+        background: white;
+        border-radius: 8px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.2s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-4px);
+      }
+
+      .card-image {
+        background: #000;
+        height: 180px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .card-image img {
+        width: 180px;
+        height: auto;
+      }
+
+      .card-content {
+        padding: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+      }
+
+      .card-title {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 0.5rem;
+        text-align: center;
+      }
+
+      .card-description {
+        font-size: 0.875rem;
+        color: #666;
+        line-height: 1.4;
+        margin-bottom: 1rem;
+        flex-grow: 1;
+        text-align: center;
+      }
+
+      .card-buttons {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+
+      .card-button {
+        background: #11ab51;
+        color: white;
+        text-decoration: none;
+        padding: 0.45rem;
+        border-radius: 4px;
+        text-align: center;
+        font-weight: 500;
+        transition: background-color 0.2s ease;
+        flex: 1 1 auto;
+      }
+
+      @media (max-width: 1200px) {
+        .cards-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .cards-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .container {
+          padding: 0 1rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .cards-grid {
+          grid-template-columns: 1fr;
+        }
+        .header-title {
+          font-size: 2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header-title">NodeJS</h1>
+    </header>
+
+    <div class="container">
+      <div class="cards-grid">
+        <!-- Card 1 -->
+        <div class="card">
+          <div class="card-image">
+            <img src="./images/bg.jpg" alt="NodeJS Logo" />
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">NodeJS Assignment-1</h3>
+            <p class="card-description">NodeJS Introduction.</p>
+            <div class="card-buttons">
+              <a href="./Task-1/index.html" class="card-button" target="_blank"
+                >Click Here</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+          <div class="card-image">
+            <img src="./images/bg.jpg" alt="NodeJS Logo" />
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">NodeJS Assignment-2</h3>
+            <p class="card-description">
+              Local Module Imports and Exports in NodeJS.
+            </p>
+            <div class="card-buttons">
+              <a href="./Task-2/email.html" class="card-button" target="_blank"
+                >Click Here</a
+              >
+              <a href="./Task-2/date.html" class="card-button" target="_blank"
+                >Click Here</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+          <div class="card-image">
+            <img src="./images/bg.jpg" alt="NodeJS Logo" />
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">NodeJS Assignment-3</h3>
+            <p class="card-description">
+              File creation read, append, and delete in NodeJS.
+            </p>
+            <div class="card-buttons">
+              <a href="./Task-3/index.js" class="card-button" target="_blank"
+                >Click Here</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+          <div class="card-image">
+            <img src="./images/bg.jpg" alt="NodeJS Logo" />
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">NodeJS Assignment-4</h3>
+            <p class="card-description">Creation of API and anatomy of API.</p>
+            <div class="card-buttons">
+              <a href="./Task-4/index.js" class="card-button" target="_blank"
+                >Click Here</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card">
+          <div class="card-image">
+            <img src="./images/bg.jpg" alt="NodeJS Logo" />
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">NodeJS Assignment-5</h3>
+            <p class="card-description">Parameters in Web Development.</p>
+            <div class="card-buttons">
+              <a
+                href="./Task-5/filter-products.js"
+                class="card-button"
+                target="_blank"
+                >Click Here</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="card">
+          <div class="card-image">
+            <img src="./images/bg.jpg" alt="NodeJS Logo" />
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">NodeJS Assignment-6</h3>
+            <p class="card-description">Description.</p>
+            <div class="card-buttons">
+              <a href="#" class="card-button" target="_blank">Click Here</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="card">
+          <div class="card-image">
+            <img src="./images/bg.jpg" alt="NodeJS Logo" />
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">NodeJS Assignment-7</h3>
+            <p class="card-description">Description.</p>
+            <div class="card-buttons">
+              <a href="#" class="card-button" target="_blank">Click Here</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="card">
+          <div class="card-image">
+            <img src="./images/bg.jpg" alt="NodeJS Logo" />
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">NodeJS Assignment-8</h3>
+            <p class="card-description">Description.</p>
+            <div class="card-buttons">
+              <a href="#" class="card-button" target="_blank">Click Here</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="card">
+          <div class="card-image">
+            <img src="./images/bg.jpg" alt="NodeJS Logo" />
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">NodeJS Assignment-9</h3>
+            <p class="card-description">Description.</p>
+            <div class="card-buttons">
+              <a href="#" class="card-button" target="_blank">Click Here</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="card">
+          <div class="card-image">
+            <img src="./images/bg.jpg" alt="NodeJS Logo" />
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">NodeJS Assignment-10</h3>
+            <p class="card-description">Description.</p>
+            <div class="card-buttons">
+              <a href="#" class="card-button" target="_blank">Click Here</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
